@@ -1,4 +1,4 @@
-// С помощью функции высшего порядка массивов - for in выведите свойства и значения объекта.
+// С помощью функции высшего порядка массивов - forEach и его методов, необходимо получить все колючи и значения объекта в виде массива.
 
 const myObject = {
     x: 10,
@@ -6,7 +6,10 @@ const myObject = {
     z: 'abc'
 }
 
-for (const key in myObject) {
-    console.log(key, myObject[key])
-}
+Object.keys(myObject).forEach(key => {
+    console.log(key)
+})
 
+// Object.values(myObject).forEach(value => {
+//     console.log(value)
+// })
