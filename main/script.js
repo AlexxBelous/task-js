@@ -1,17 +1,4 @@
-// С помощью инструкции switch определите является ли число в переменной mount зимним месяцем.
+// С помощью функции высшего порядка массивов - forEach выведите элементы массива и их индексы в консоль.
 
-const mount = 2;
+const myArray = ['first', 'second', 'third', 'four'];
 
-switch (mount) {
-    case 12:
-        console.log('December')
-        break
-    case 1:
-        console.log('January')
-        break
-    case 2:
-        console.log('February')
-        break
-    default:
-        console.log('This month is not winter')
-}
