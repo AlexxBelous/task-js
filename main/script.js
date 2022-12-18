@@ -6,3 +6,10 @@ const myObject = {
     z: 'abc'
 }
 
+Object.keys(myObject).forEach(key => {
+    console.log(key)
+})
+
+// Object.values(myObject).forEach(value => {
+//     console.log(value)
+// })
