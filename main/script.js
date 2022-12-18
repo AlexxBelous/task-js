@@ -2,3 +2,6 @@
 
 const myArray = ['first', 'second', 'third', 'four'];
 
+myArray.forEach((item, index) => {
+    console.log(item, index);
+})
