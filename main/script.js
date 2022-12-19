@@ -16,9 +16,9 @@ div.insertAdjacentElement('beforebegin', header)
 
 const ul = `
     <ul>
-        <li>один</li>
-        <li>два</li>
-        <li>три</li>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
     </ul>
 `;
 
@@ -41,8 +41,8 @@ div.appendChild(img)
 // Используя HTML строку, создать DIV с классом 'pDiv' + c 2-мя параграфами
 const elemHTML = `
 <div class='pDiv'>
-    <p>Параграф 1</p>
-    <p>Параграф 2</p>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
 </div>`
 // Поместить этот DIV до элемента <ul></ul>
 const ulList = div.querySelector('ul');
@@ -61,9 +61,9 @@ const generateAutoCard = (brand, color, year) => {
     return `
         <div class="autoCard">
             <h2>${brand.toUpperCase()} ${year}</h2>
-            <p>Автомобиль ${brand.toUpperCase()} - ${year} года. Возраст авто - ${curYear - year} лет.</p>
-            <p>Цвет: ${color}</p>
-            <button type='button' class='btn'>Удалить</button>
+            <p>Car ${brand.toUpperCase()} - ${year} year. year of issue - ${curYear - year} years.</p>
+            <p>Color: ${color}</p>
+            <button type='button' class='btn'>Delete</button>
         </div>
     `;
 }
@@ -79,9 +79,9 @@ carsDiv.classList.add('autos');
 
 // Создать 3 карточки авто, используя функцию generateAutoCard
 const carsList = [
-    {brand: 'Tesla', year: 2015, color: 'Красный'},
-    {brand: 'Lexus', year: 2016, color: 'Серебристый'},
-    {brand: 'Nissan', year: 2012, color: 'Черный'},
+    {brand: 'Tesla', year: 2015, color: 'red'},
+    {brand: 'Lexus', year: 2016, color: 'green'},
+    {brand: 'Nissan', year: 2012, color: 'black'},
 ]
 
 const carsHTML = carsList.map(car => {
